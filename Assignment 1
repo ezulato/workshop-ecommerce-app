@@ -1,0 +1,36 @@
+
+----------------------
+ADD A NEW PRODUCT TO THE ECOMMERCE CATALOG.
+FOLLOW THERE INSTRUCTIONS:
+https://github.com/datastaxdevs/workshop-ecommerce-app
+
+STEPS:
+1- ADD 1 NEW product: ds888.jpg
+2- add image to: workshop-ecommerce-app-main\ui\public\images
+
+
+INSERT INTO category (name , category_id , image , parent_id , products) VALUES ('Martinas rules' , now() , 'ds888a.jpg' , d887b049-d16c-46e1-8c94-0a1280dedc30 , ['DS888S' , 'DS888M' , 'DS888L' , 'DS888XL' , 'DS8882XL' , 'DS8883XL']);
+-- select the category_id that you have just insert . parent_id from category tbl
+INSERT INTO featured_product_groups (feature_id , name , category_id , image , price , parent_id) VALUES (202112 , 'Martinas rules' , 55349060-89ef-11ec-b495-71b3e39f3520 , 'ds888.jpg' , 32.23 , d887b049-d16c-46e1-8c94-0a1280dedc30);
+
+
+
+INSERT INTO price(product_id , store_id , value) VALUES ('DS888S' , 'web' , 32.23);
+INSERT INTO price(product_id , store_id , value) VALUES ('DS888M' , 'web' , 32.23);
+INSERT INTO price(product_id , store_id , value) VALUES ('DS888L' , 'web' , 32.23);
+INSERT INTO price(product_id , store_id , value) VALUES ('DS888XL' , 'web' , 32.23);
+INSERT INTO price(product_id , store_id , value) VALUES ('DS8882XL' , 'web' , 32.32);
+INSERT INTO price(product_id , store_id , value) VALUES ('DS8883XL' , 'web' , 32.32);
+INSERT INTO product(product_id , product_group , name , brand , model_number , short_desc , long_desc , specifications , images)
+VALUES ('DS888S' , 'DS888' , 'Martinas rules' , 'Please keep us up to dated' , 'DS888' , 'Martinas rules - Small' , 'Own a piece of the 32 house in tuscany tuscany' , {'size':'Small' , 'material':'pure silk' , 'color':'turquoise and orange'} , {'ds888.jpg'});
+INSERT INTO product(product_id , product_group , name , brand , model_number , short_desc , long_desc , specifications , images)
+VALUES ('DS888M' , 'DS888' , 'Martinas rules' , 'lease keep us up to dated' , 'DS888' , 'Martinas rules - Medium' , 'Own a piece of the 32 house in tuscany tuscany' , {'size':'Medium' , 'material':'pure silk' , 'color':'turquoise and orange'} , {'ds888.jpg'});
+INSERT INTO product(product_id , product_group , name , brand , model_number , short_desc , long_desc , specifications , images)
+VALUES ('DS888L' , 'DS888' , 'Martinas rules' , 'lease keep us up to dated' , 'DS888' , 'Martinas rules - Large' , 'Own a piece of the 32 house in tuscany tuscany' , {'size':'Large' , 'material':'pure silk' , 'color':'turquoise and orange'} , {'ds888.jpg'});
+INSERT INTO product(product_id , product_group , name , brand , model_number , short_desc , long_desc , specifications , images)
+VALUES ('DS888XL' , 'DS888' , 'Martinas rules' , 'lease keep us up to dated' , 'DS888' , 'Martinas rules - Extra Large' , 'Own a piece of the 32 house in tuscany tuscany' , {'size':'Extra Large' , 'material':'pure silk' , 'color':'turquoise and orange'} , {'ds888.jpg'});
+INSERT INTO product(product_id , product_group , name , brand , model_number , short_desc , long_desc , specifications , images)
+VALUES ('DS8882XL' , 'DS888' , 'Martinas rules' , 'lease keep us up to dated' , 'DS888' , 'Martinas rules - 2X Large' , 'Own a piece of the 32 house in tuscany tuscany' , {'size':'2X Large' , 'material':'pure silk' , 'color':'turquoise and orange'} , {'ds888.jpg'});
+INSERT INTO product(product_id , product_group , name , brand , model_number , short_desc , long_desc , specifications , images)
+VALUES ('DS8883XL' , 'DS888' , 'Martinas rules' , 'lease keep us up to dated' , 'DS888' , 'Martinas rules - 3X Large' , 'Own a piece of the 32 house in tuscany tuscany' , {'size':'3X Large' , 'material':'pure silk' , 'color':'turquoise and orange'} , {'ds888.jpg'});
+
